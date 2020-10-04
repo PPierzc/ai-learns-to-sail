@@ -1,5 +1,5 @@
 # AI Learns to Sail
-<div style="width: 100%;">
+<div style="width: 100%; text-align: center;">
     <img alt="logo" src="./imgs/open_sea.png" width="300px" />
 </div>
 
