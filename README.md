@@ -1,7 +1,7 @@
 # AI Learns to Sail
 
 ## Open Sea
-<img alt="logo" src="./imgs/open_sea.png" width="300px" />
+<img alt="open sea results" src="./imgs/open_sea.png" width="300px" />
 
     Running: Random agent on open sea task: 100%|██████████| 100/100 [00:00<00:00, 275.73it/s]
     Running: Train agent on open sea task: 100%|██████████| 500/500 [00:07<00:00, 67.93it/s]
@@ -11,7 +11,7 @@
     | Trained           | 107.89           | 10.36           |
     
 ## Channel
-<img alt="logo" src="./imgs/channel.png.png" width="300px" />
+<img alt="channel results" src="./imgs/channel.png" width="300px" />
 
     Running: Random agent on channel sea task: 100%|██████████| 100/100 [00:00<00:00, 602.28it/s]
     Running: Train agent on channel sea task: 100%|██████████| 1000/1000 [00:11<00:00, 86.73it/s]
