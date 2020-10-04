@@ -1,4 +1,15 @@
 # AI Learns to Sail
+Code for the blog post ["AI Learns to Sail upwind" on ML&Neuro Blog](https://ppierzc.github.io/ai-learns-to-sail-upwind).
+
+A Q-learning implementation using average reward of the sailing upwind task.
+Tackles two tasks: open sea and sailing in the channel.
+The open sea just requires to select the appropriate angle to sail along.
+The channel task requires the agent to learn how to gybe.
+
+## Installation
+Clone the project locally.
+
+    git clone https://github.com/PPierzc/ai-learns-to-sail.git
 
 ## Open Sea
 <img alt="open sea results" src="./imgs/open_sea.png" width="300px" />
