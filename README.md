@@ -1,5 +1,7 @@
 # AI Learns to Sail
-<img alt="logo" src="./imgs/open_sea.png" width="300px" />
+<div style="width: 100%;">
+    <img alt="logo" src="./imgs/open_sea.png" width="300px" />
+</div>
 
 ## Open Sea
 
