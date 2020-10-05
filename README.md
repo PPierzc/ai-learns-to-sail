@@ -1,10 +1,15 @@
 # AI Learns to Sail
 Code for the blog post ["AI learns to sail upwind" on the ML&Neuro Blog](https://ppierzc.github.io/ai-learns-to-sail-upwind).
 
+<img alt="channel results" src="./imgs/sailing_two_tasks.gif" height="300px" />
+
 A Q-learning implementation using average reward of the sailing upwind task.
 Tackles two tasks: open sea and sailing in the channel.
 The open sea just requires to select the appropriate angle to sail along.
 The channel task requires the agent to learn how to gybe.
+
+## Demo
+A live demo is available at [DEMO](https://ppierzc.github.io/ai-learns-to-sail-upwind/#open_sea_container).
 
 ## Install
 Clone the project.
@@ -39,7 +44,7 @@ You should get something like the result below.
     | Trained           | 107.89           | 10.36           |
     
 #### Channel
-<img alt="channel results" src="./imgs/channel.png" width="300px" />
+<img alt="channel results" src="./imgs/channel.png" height="300px" />
 
 To run the task execute:
 
