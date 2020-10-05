@@ -30,6 +30,7 @@ Blue lines show random trajectories, while the black shows a converged trajector
 
 <img alt="open sea results" src="./imgs/open_sea.png" width="300px" />
 
+###### Run open sea task
 To run the task execute:
 
     python3 ./tasks/open_sea.py
@@ -52,6 +53,7 @@ Below you will find a visualisation of the task along with a random solution (bl
 
 <img alt="channel results" src="./imgs/channel.png" height="300px" />
 
+###### Run channel task
 To run the task execute:
 
     python3 ./tasks/channel.py
