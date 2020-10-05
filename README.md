@@ -44,6 +44,12 @@ You should get something like the result below.
     | Trained           | 107.89           | 10.36           |
     
 #### Channel
+The second task involves sailing in a tight channel.
+Following a straight line is no longer the optimal solution as it would lead to a crash with a side pier.
+Instead the agent has to learn how to gybe to avoid getting destroyed.
+
+Below you will find a visualisation of the task along with a random solution (blue) and an optimal solution (black).
+
 <img alt="channel results" src="./imgs/channel.png" height="300px" />
 
 To run the task execute:
@@ -61,3 +67,6 @@ You should get something like the result below.
     
 ## License
 Distributed under the [MIT License](/LICENSE)
+
+## Contribution and Ideas
+If you have any cool ideas that you think this agent should try then share them as an issue or create a pull request.
