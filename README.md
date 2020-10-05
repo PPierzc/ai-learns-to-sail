@@ -6,7 +6,7 @@ Code for the blog post ["AI learns to sail upwind" on the ML&Neuro Blog](https:/
 A Q-learning implementation using average reward of the sailing upwind task.
 Tackles two tasks: open sea and sailing in the channel.
 The open sea just requires to select the appropriate angle to sail along.
-The channel task requires the agent to learn how to gybe.
+The channel task requires the agent to learn how to tack.
 
 ## Demo
 A live demo is available at [DEMO](https://ppierzc.github.io/ai-learns-to-sail-upwind/#open_sea_container).
@@ -47,7 +47,7 @@ You should get something like the result below.
 #### Channel
 The second task involves sailing in a tight channel.
 Following a straight line is no longer the optimal solution as it would lead to a crash with a side pier.
-Instead the agent has to learn how to gybe to avoid getting destroyed.
+Instead the agent has to learn how to tack to avoid getting destroyed.
 
 Below you will find a visualisation of the task along with a random solution (blue) and an optimal solution (black).
 
