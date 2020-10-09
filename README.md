@@ -44,6 +44,22 @@ You should get something like the result below.
     | Random            | 52.52            | 35.16           |
     | Trained           | 107.89           | 10.36           |
     
+###### Run the DQN solution of the open sea task 
+To run the DQN solution of the task execute:
+
+    python3 ./tasks/open_sea.py
+    
+You should get something like the result below.
+    
+    Running: Random agent on open sea task: 100%|██████████| 100/100 [00:00<00:00, 602.97it/s]
+    Running: Generating training data for the open sea task: 100%|██████████| 50000/50000 [00:01<00:00, 43604.19it/s]
+    Running: Training DQN on open sea task: 100%|██████████| 301/301 [11:03<00:00,  2.20s/it]
+    Running: Evaluate DQN on open sea task: 100%|██████████| 50/50 [05:33<00:00,  6.67s/it
+    Results from last 50 episodes
+    | ===== agent ===== | ===== mean ===== | ===== std ===== |
+    | Random            | 52.52            | 35.16           |
+    | DQN               | 99.42            | 9.08            |
+    
 #### Channel
 The second task involves sailing in a tight channel.
 Following a straight line is no longer the optimal solution as it would lead to a crash with a side pier.
