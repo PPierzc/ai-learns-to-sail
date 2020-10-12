@@ -22,7 +22,7 @@ for episode in tqdm(range(100), desc='Running: Random agent on channel sea task'
     angle = 0  # always start with angle 0
     y = 0
     for i in range(200):
-        a = np.random.choice(range(2) ) # Sample the action from the softmax distribution
+        a = np.random.choice(range(2))  # Sample the action from the softmax distribution
 
         out = [-0.1, 0.1][a]  # Get the change in angle as a result of the selected angle
 

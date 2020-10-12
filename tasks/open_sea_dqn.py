@@ -26,7 +26,7 @@ class Agent(object):
         return self.model.predict(np.array(state))
 
     def get_action(self, state):
-        Q = self.predict([state])[0]
+        Q = self.model(np.array([state]), training=False)[0]
 
         p = 1 / (1 + np.exp(np.diff(Q)[0]))  # Action selection using softmax
         p = [p, 1 - p]
@@ -112,7 +112,7 @@ for i in tqdm(range(300), desc='Running: Training DQN on open sea task'):
 
 td_ys = []
 memory = []
-for episode in tqdm(range(50), desc='Running: Evaluate DQN on open sea task'):  # run for 500 episodes
+for episode in tqdm(range(100), desc='Running: Evaluate DQN on open sea task'):  # run for 500 episodes
     angle = 0
     y = 0
 
@@ -133,13 +133,13 @@ for episode in tqdm(range(50), desc='Running: Evaluate DQN on open sea task'):  
     td_ys.append(y)
 
 # Display results
-random_mean = np.mean(random_ys[-50:])
-random_std = np.std(random_ys[-50:])
+random_mean = np.mean(random_ys[-100:])
+random_std = np.std(random_ys[-100:])
 
-td_mean = np.mean(td_ys[-50:])
-td_stq = np.std(td_ys[-50:])
+td_mean = np.mean(td_ys[-100:])
+td_stq = np.std(td_ys[-100:])
 
-print('Results from last 50 episodes')
+print('Results from last 100 episodes')
 print('| ===== agent ===== | ===== mean ===== | ===== std ===== |')
 print(f'{"| Random":<20}| {random_mean:<17.2f}| {random_std:<16.2f}|')
 print(f'{"| DQN":<20}| {td_mean:<17.2f}| {td_stq:<16.2f}|')
