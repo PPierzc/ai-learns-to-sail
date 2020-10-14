@@ -100,7 +100,7 @@ for i in tqdm(range(300), desc='Running: Training DQN on open sea task'):
     new_Q = agent.predict(new_angles)
 
     V = [Q[j, actions[j]] for j in range(len(actions))]
-    delta = rewards - rhos + new_Q.max(1) - V
+    delta = rewards - rhos + new_Q.max(1)
 
     x_train = angles.copy()
     y_train = Q.copy()
